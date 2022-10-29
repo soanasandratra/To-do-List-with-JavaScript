@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>To do list project</title>
+  </head>
+  <body>
+    <main>
+      <h1 id="big-title">Mes Projets</h1>
+      <div id="project-container">
+        <div class="project-card">
+          <h2 class="project-title">Titre du projet</h2>
+          <img src="./assets/image1.jpg" alt="projet1" />
+          <p class="project-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+          </p>
+        </div>
+        <div class="project-card">
+          <h2 class="project-title">Titre du projet</h2>
+          <img src="./assets/image1.jpg" alt="projet1" />
+          <p class="project-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+          </p>
+        </div>
+        <div class="project-card">
+          <h2 class="project-title">Titre du projet</h2>
+          <img src="./assets/image1.jpg" alt="projet1" />
+          <p class="project-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+          </p>
+        </div>
+      </div>
+
+      <form action="traitement.php" method="get">
+        <h2>Créer un nouveau projet</h2>
+        <label for="title-project">title of project</label>
+        <input type="text" id="title-project" /><br /><br />
+        <label for="image-link">Image link</label>
+        <input type="text" id="image-link" /><br /><br />
+        <div id="description">
+          <label for="projet-description">Project Description</label><br />
+          <textarea id="projet-description" cols="30" rows="10"></textarea>
+        </div>
+        <input type="submit" value="Create Project" />
+      </form>
+    </main>
+    <!-- javascript -->
+    <script src="./index.js"></script>
+  </body>
+</html>

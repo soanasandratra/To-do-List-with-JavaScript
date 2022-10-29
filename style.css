@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+}
+/* -------------titre en haut -------------- */
+#big-title {
+  text-align: center;
+  text-decoration: underline;
+}
+/* ---------------projets container-------------------- */
+#project-container {
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-row-gap: 10px;
+  justify-content: space-around;
+}
+/*-------------------------- projet-------------------------- */
+.project-card {
+  border: 2px solid rgb(255, 152, 169);
+  border-radius: 1rem;
+  text-align: center;
+  padding: 5px;
+}
+.project-title {
+  color: skyblue;
+}
+.project-card img {
+  width: 20vw;
+  min-width: 200px;
+  max-height: 200px;
+  border: 0;
+  border-radius: 0.3rem;
+}
+/* ---------formulaire new project--------- */
+form {
+  width: 50%;
+  background: rgb(255, 152, 169);
+  margin: 10px auto;
+  padding: 30px;
+}
+
+form h2 {
+  text-align: center;
+}
+label {
+  display: inline-block;
+  min-width: 150px;
+  font-size: 1.1rem;
+}
+
+#title-project,
+#image-link {
+  width: 400px;
+}
+
+#description {
+  text-align: center;
+}
+
+textarea {
+  resize: none;
+  width: 300px;
+  margin: 5px;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 300px;
+  height: 30px;
+  margin: 20px auto;
+  color: skyblue;
+  border: 1px solid skyblue;
+  border-radius: 0.2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+input[type="submit"]:hover {
+  background: rgb(255, 255, 255);
+}
+
+/* ---------responsivité------------ */
+@media only screen and (max-width: 850px) {
+  #project-container {
+    display: grid;
+    grid-template-columns: 40% 40%;
+  }
+  .project-card img {
+    width: 100%;
+    max-width: 100%;
+  }
+  form {
+    width: 80%;
+  }
+  label {
+    width: 100%;
+    text-align: center;
+  }
+  #title-project,
+  #image-link,
+  textarea,
+  input[type="submit"] {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  #project-container {
+    display: grid;
+    grid-template-columns: 90%;
+  }
+  .project-card img {
+  }
+}
